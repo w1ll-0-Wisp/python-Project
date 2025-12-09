@@ -7,17 +7,24 @@ the user can change the high of the dice from 20 to any number, do note that it 
 
 what is needed to run the script
 python 3.14
+
 the imported modules random, argparse
 
 how to run
 python.exe \rolls.py 
+
 how to run with a different number
+
 python.exe \rolls.py 100 (this value can be changed to any integer)
+
 file export: the file will be exported as rolls.txt
+
 link to script: https://github.com/w1ll-0-Wisp/python-Project/blob/c32fcbf4ebb288fb8098f0eb96a79471ac84d268/rolls.py
 
 for you professor: this was a fun project, i may not have a good skill in programing but here is my atempt at the script, there is a few files in my directory, there the README that your currently reading a project.md, this was mostly me doing a quick test for rolling a number, and also a but of conscept and pseudo code to get a idea for a list and into  excel sheet, i did not go this route as it just made it more complicated for me, i also did not do excel as it was lot more complicated for me and i decided instead to do a .txt. the second file is rollsl.py, this is my first upload of my script with attempt, same with argparse, i was so lost and needed to study more, this is a typo as it should have been rolls.py but i hadadded a l after rolls, then there is the proper one, rolls.py this is my real file, it has my random numbers, my argparse,  and a export to a txt file that will only create one of that kimd, then tell users that it already exists, i though of doing a loop but decided not too as it made it more complicated to export for me, it does allow the user to use a number higher then 20 so the dice roll can go from 1-20 to 1-100000, the challenge for me was the exporting but i did find it awarding when i did get it run properly, with my script and that it even has a message to let you know that it already exists, either way if it exists it will still show you what you rolled on the screen. this project has honestly helped me with taking time watching videos, reading the official python site for commands and how they work, and this has helped me learn more on argparse (my weak point from the last test) this has honestly improved my use of argparse, if i decided to do a script that was not a dice roll, i would have added more args to use but i did not have a idea for more arguments for this script. i would like to thank you for taking time with me a few weeks ago showing me argparse more and aiding me with my questions, i know that im hard to work with as i require visual learning, i find that just reading documents is not very helpful, i like seeing the code itself or someone explaing as i look, that helps me understand more, again i want to thank you for the great semester and hope i see you again in the future!
+
 Here are the video that aided me for argparse
+
 https://www.youtube.com/watch?v=FbEJN8FsJ9U&t=142s
 
 Also in the rubric it said to add a external link? somthing called markup documentation file? and also this link was in it? https://dealsbe.com 
