@@ -1,24 +1,20 @@
 import random
 import argparse
 
-#need to finish argparse mostly for the rolls and how it takes the numbers
-#and puts them in a table or list
-#parser = argparse.ArgumentParser(description="this script is a D20, a 20 sided dice that will show you what you get, 1 is low 20 is high ")
-
-#parser.add_argument (
-#'rolls',
-#roll=int,
-#help="how many dice you want to roll"
-#)
-#need to add a argparse for excel sheet export
+Parser=argparse.ArgumentParser(
+    description= "this is a D20 dice roll a D20 is a 20 sided dice, you can change the max dice face from 20 to anything, the script will roll a dice and export it to a .txt file"
+)
+Parser.add_argument("high", type=int, default="20", help="change the max dice face number")
+                    
+Myargs= Parser.parse_args()
 
 low = 1
-high = 20
 
 
 
-number= random.randint(low, high)
-print(number)
+
+rolls= random.randint(low, Myargs.high)
+print(rolls)
 
 
 
@@ -28,8 +24,8 @@ file_path = "rolls.txt"
 
 try:
     with open(file_path, "x") as file:
-         file.write(f"{number}")
+         file.write(f"{rolls}")
 
-         print("file was written succesfully go look at your roll!")
+         print(f"The file {file_path} was written succesfully go look at your roll!")
 except FileExistsError:
     print("this file already exists")
