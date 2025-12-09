@@ -4,7 +4,7 @@ import argparse
 Parser=argparse.ArgumentParser(
     description= "this is a D20 dice roll a D20 is a 20 sided dice, you can change the max dice face from 20 to anything, the script will roll a dice and export it to a .txt file"
 )
-Parser.add_argument("high", type=int, default="20", help="change the max dice face number")
+Parser.add_argument("high", type=int, nargs="?", default="20", help="change the max dice face number")
                     
 Myargs= Parser.parse_args()
 
